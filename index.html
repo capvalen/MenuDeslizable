@@ -75,7 +75,7 @@
         <nav class="navbar navbar-fixed-top encoger">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle collapsed" id="btnColapsador" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -155,14 +155,16 @@ Nunc sem orci, tempor quis dolor a, mollis rhoncus mauris. Morbi id ligula id ma
 <!-- Menu Toggle Script -->
 <script>
 $(".ocultar-mostrar-menu").click(function() {
-
 	ocultar()
 });
-	function ocultar(){
-		$("#wrapper").toggleClass("toggled");
+function ocultar(){console.log('oc')
+	$("#wrapper").toggleClass("toggled");
 	//$('.navbar-fixed-top').css('left','0');
 	$('.navbar-fixed-top').toggleClass('encoger');
-	}
+	$('#btnColapsador').addClass('collapsed');
+	$('#btnColapsador').attr('aria-expanded','false');
+	$('#navbar').removeClass('in');
+}
 $('.has-clear').mouseenter(function(){$(this).find('input').focus();})
 
 $('.has-clear input[type="text"]').on('input propertychange', function() {
