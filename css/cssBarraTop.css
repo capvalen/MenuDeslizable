@@ -1,15 +1,20 @@
 body{
-    background: #8999A8;/*#8999A8*/
+    /*background: #8999A8;#8999A8*/
 }
 .navbar{min-height: 70px;}
 .navbar-fixed-top{ transition: all 0.5s ease;}
 .encoger{left:250px; transition: all 0.5s ease;}
 
-.navbar, .dropdown-menu{
-background:rgba(25,32,48,1) url(../images/fake_brick.png);
-border: none;
-
+.ocultar-mostrar-menu:focus{outline: none;}
+@media only screen and (max-width: 992px) {
+   .encoger{left:0px; }
+#page-content-wrapper{margin-top:70px;}
+.navbar-brand > img{display: inherit;  max-width: 37%;}
 }
+.navbar {/*.dropdown-menu llama mal al metodo*/
+background:rgba(25,32,48,1) url(../images/fake_brick.png);
+border: none;}
+
 
 .nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
   border-bottom: 3px solid transparent;
@@ -18,7 +23,7 @@ border: none;
   border-bottom: 3px solid transparent;
   background: none;
 }
-.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+.navbar a, .navbar-toggle{/*.dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, */
  color: #fff;
 }
 
@@ -66,5 +71,4 @@ border: none;
 #txtBuscarNivelGod:placeholder-shown { width:100%; font-family: 'IcoFont'; -moz-box-sizing: border-box;}/*Cuando el txt SI esta vacio*/
 
 ::-ms-clear {display: none;} .form-control-clear {  z-index: 10;  pointer-events: auto;  cursor: pointer;}
-#liDatosPersonales p{    margin-top: 10px;
-    line-height: 1px;}
+#liDatosPersonales p{    margin-top: 10px;    line-height: 1px;}
