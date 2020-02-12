@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" type="image/png" href="images/peto.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/peto.png" sizes="32x32">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <script src="https://unpkg.com/ionicons@4.5.1/dist/ionicons.js"></script> <!--Extraido de: https://ionicons.com/ -->
-	<link rel="stylesheet" href="css/icofont.min.css">
+		<link rel="stylesheet" href="css/icofont.min.css?version=1.0.1.2">
 
     <title>Hola sidebar</title>
 </head>
@@ -30,7 +30,7 @@
 		</div>
 
 		<ul class="list-unstyled components">
-				<p class="text-center"><small>Versión 3.1.46</small></p>
+				<p class="text-center"><small>Versión 3.2</small></p>
 				<li class="active">
 						<a href="#homeSubmenu" class="d-flex align-items-center"><ion-icon name="home"></ion-icon> <span class="liText">Principal</span></a>
 				</li>
@@ -77,15 +77,14 @@
 <!-- Fin Sidebar  -->
 			
 <!--Barra de Menú-->
-<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #a35bb4">
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #851b9a">
 	<div class="container-fluid">
 		<button type="button" id="sidebarCollapse" class="btn btn-outline-light tieneMostrar mr-3 px-2" >
-				<i class="icofont-navigation-menu"></i>
+			<i class="icofont-rounded-right-up"></i>
 		</button>
 										
 		<a class="navbar-brand" href="#!" id="btnBrand">
-			<img src="images/logoCorto.png" width="35" height="35" class="d-inline-block align-top" alt="">
-			Infocat Soluciones
+			<img src="images/logo.png?version=1.0" alt="" width="235" height="auto">
 		</a>
 		<button class="btn btn-outline-light d-inline-block d-lg-none ml-auto px-2" id="btnSubNavegacion" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="icofont-caret-down"></i>
@@ -94,14 +93,14 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="nav navbar-nav ml-auto">
 					<li class="nav-item d-none">
-							<a class="nav-link" href="#"> Mi perfil</a>
+							<a class="nav-link" href="#"><i class="icofont-user-alt-1"></i> Mi perfil</a>
 					</li>
 				
 				<li class="nav-item dropdown ">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="settings"></ion-icon> Opciones</a>
+						<a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="settings"></ion-icon>  <span class="px-2">Opciones</span> </a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown07">
-						<a class="dropdown-item" href="#">Mi perfil</a>
-						<a class="dropdown-item" href="#">Cerrar sesión</a>
+						<a class="dropdown-item" href="#"><i class="icofont-user-alt-1"></i> Mi perfil</a>
+						<a class="dropdown-item" href="#"><i class="icofont-reply-all"></i> Cerrar sesión</a>
 					</div>
 				</li>
 			</ul>
@@ -113,23 +112,29 @@
 <div id="content" class="px-5 pt-5">
     <!-- Contenido de la Página  -->
 
-    <h2><i class="icofont-battery-empty"></i> Collapsible Sidebar Using Bootstrap 4</h2>
+    <h2><i class="icofont-tasks-alt"></i> Sidebar Con Bootstrap 4</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <div class="line"></div>
 
-    <h2>Lorem Ipsum Dolor</h2>
+    <h2><i class="icofont-lungs"></i> Lorem Ipsum Dolor</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <div class="line"></div>
 
-    <h2>Lorem Ipsum Dolor</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2><i class="icofont-speech-comments"></i> Lorem Ipsum Dolor</h2>
+    <div class="row">
+			<div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+			<div class="col"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit et velit nisi nihil nobis illum asperiores fuga rerum itaque corrupti. Aperiam accusantium, blanditiis vel ipsa vitae nesciunt? Provident magnam nisi expedita odio consectetur doloribus voluptatem animi natus excepturi. Blanditiis tenetur incidunt tempore?</p>
+			</div>
+			<div class="col"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet soluta adipisci fuga incidunt aperiam voluptas ipsum nam. Esse unde nulla velit doloribus alias quod consequuntur iure ullam labore? Ratione et animi similique ab, rerum assumenda deleniti quidem ex voluptates officia aspernatur est laborum adipisci debitis tempore alias! Totam deserunt quibusdam atque sint, voluptates ut impedit ea sunt libero vero harum.</p></div>
+			<div class="col"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur voluptatem laudantium odit dolore neque eveniet quidem deleniti? Ipsum provident temporibus vel deleniti unde beatae ullam?</p></div>
+		</div>
 
     <div class="line"></div>
 
-    <h3>Lorem Ipsum Dolor</h3>
+    <h3><i class="icofont-space"></i> Lorem Ipsum Dolor</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
 <!-- Fin de Contenido de la Página  -->
