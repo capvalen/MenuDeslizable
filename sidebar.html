@@ -30,7 +30,7 @@
 		</div>
 
 		<ul class="list-unstyled components">
-				<p class="text-center"><small>Versión 3.2</small></p>
+				<p class="text-center"><small>Versión 2.2b</small></p>
 				<li class="active">
 						<a href="#homeSubmenu" class="d-flex align-items-center"><ion-icon name="home"></ion-icon> <span class="liText">Principal</span></a>
 				</li>
@@ -112,30 +112,7 @@
 <div id="content" class="px-5 pt-5">
     <!-- Contenido de la Página  -->
 
-    <h2><i class="icofont-tasks-alt"></i> Sidebar Con Bootstrap 4</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <div class="line"></div>
-
-    <h2><i class="icofont-lungs"></i> Lorem Ipsum Dolor</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <div class="line"></div>
-
-    <h2><i class="icofont-speech-comments"></i> Lorem Ipsum Dolor</h2>
-    <div class="row">
-			<div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-			<div class="col"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit et velit nisi nihil nobis illum asperiores fuga rerum itaque corrupti. Aperiam accusantium, blanditiis vel ipsa vitae nesciunt? Provident magnam nisi expedita odio consectetur doloribus voluptatem animi natus excepturi. Blanditiis tenetur incidunt tempore?</p>
-			</div>
-			<div class="col"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet soluta adipisci fuga incidunt aperiam voluptas ipsum nam. Esse unde nulla velit doloribus alias quod consequuntur iure ullam labore? Ratione et animi similique ab, rerum assumenda deleniti quidem ex voluptates officia aspernatur est laborum adipisci debitis tempore alias! Totam deserunt quibusdam atque sint, voluptates ut impedit ea sunt libero vero harum.</p></div>
-			<div class="col"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur voluptatem laudantium odit dolore neque eveniet quidem deleniti? Ipsum provident temporibus vel deleniti unde beatae ullam?</p></div>
-		</div>
-
-    <div class="line"></div>
-
-    <h3><i class="icofont-space"></i> Lorem Ipsum Dolor</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
     
 <!-- Fin de Contenido de la Página  -->
 </div>
@@ -150,44 +127,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $("#sidebar").mCustomScrollbar({
-            theme: "minimal-dark",
-            mouseWheelPixels: 200
-        });
 
-        $('#dismiss, .overlay').on('click', function () {
-            ocultarPanel()
-        });
-                    $('.sidebar-header').click(function(){
-                        ocultarPanel();
-                    });
-                    $('#btnBrand').click(function(){
-                        mostrarPanel();
-                    });
-                
-                function ocultarPanel(){
-                    $('#sidebar').removeClass('active');
-        $('.overlay').removeClass('active');
-                    $('#sidebarCollapse').toggleClass('tieneMostrar');
-                }
-                function mostrarPanel(){
-                    $('#sidebar').addClass('active');
-        $('.overlay').addClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                    $('#sidebarCollapse').toggleClass('tieneMostrar');
-                }
-
-        $('#sidebarCollapse').on('click', function () {
-            if($(this).hasClass('tieneMostrar')){
-                                mostrarPanel();
-                            }else{
-                                ocultarPanel();
-                            }
-                        
-        });
-    });
 </script>
   </body>
 </html>
